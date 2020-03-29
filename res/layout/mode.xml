@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/main" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout android:id="@+id/icon" android:orientation="vertical" android:layout_alignParentTop="true" 
+		android:layout_alignParentLeft="true" android:layout_width="fill_parent" android:layout_height="fill_parent" >
+		<ImageView android:id="@+id/bg" android:src="@drawable/bg2" android:layout_width="fill_parent" 
+			android:layout_height="fill_parent" >
+		</ImageView>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/title" android:orientation="vertical" android:layout_alignParentTop="true" 
+		android:layout_alignParentLeft="true" android:layout_width="fill_parent" android:layout_height="wrap_content" 
+		android:gravity="center" android:layout_centerHorizontal="true" >
+		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:typeface="monospace" android:textSize="25sp" android:layout_gravity="center" 
+			android:text="Choose A Game Mode" android:textColor="#FFFFFF" android:textStyle="bold" android:layout_margin="5dp" >
+		</TextView>
+	</LinearLayout>
+	<LinearLayout android:orientation="horizontal" android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true" android:layout_width="fill_parent" android:layout_height="fill_parent" 
+		android:weightSum="2" >
+		<LinearLayout android:orientation="vertical" android:layout_width="0dip" android:layout_height="fill_parent" 
+		android:weightSum="16" android:layout_weight="1" android:gravity="left" >
+			<View android:layout_weight="2" android:layout_width="0dip" android:layout_height="0dip" >
+			</View>
+			<TextView android:id="@+id/txtMode" android:layout_weight="1" android:layout_width="fill_parent" android:layout_height="0dip" 
+				android:text="" android:textSize="20sp" android:textColor="#FFFFFF" android:textStyle="italic" 
+				android:typeface="serif" android:gravity="center" >
+			</TextView>
+			<View android:layout_weight="1" android:layout_width="0dip" android:layout_height="0dip" >
+			</View>
+			<TextView android:id="@+id/txtDescription" android:layout_weight="8" android:layout_width="fill_parent" 
+				android:layout_height="0dip" android:maxLines="15" android:text="" android:textSize="15sp" 
+				android:textColor="#FFFFFF" android:textStyle="bold" android:typeface="serif" android:gravity="left" >
+			</TextView>
+			<View android:layout_weight="4" android:layout_width="0dip" android:layout_height="0dip" >
+			</View>
+		</LinearLayout>
+		<LinearLayout android:orientation="vertical" android:layout_width="0dip" android:layout_height="fill_parent" 
+		android:weightSum="16" android:layout_weight="1" android:gravity="right" >
+			<View android:layout_weight="4" android:layout_width="0dip" android:layout_height="0dip" >
+			</View>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0dip" 
+				android:weightSum="1" android:layout_weight="1" >
+				<Button android:id="@+id/btnCasual" style="@style/button" android:text="Casual" 
+					android:layout_width="0dip" android:layout_height="fill_parent" android:layout_weight="1" />
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0dip" 
+				android:weightSum="1" android:layout_weight="1" >
+				<Button android:id="@+id/btnSurvival" style="@style/button" android:text="Survival" 
+					android:layout_width="0dip" android:layout_height="fill_parent" android:layout_weight="1" />
+			</LinearLayout>
+			<View android:layout_weight="10" android:layout_width="0dip" android:layout_height="0dip" >
+			</View>
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/gameFeed" android:layout_alignParentBottom="true"	
+		android:layout_alignParentLeft="true" android:layout_width="0dip" android:layout_height="0dip" />
+	<LinearLayout android:id="@+id/controls" android:orientation="horizontal" android:layout_above="@id/gameFeed" 
+		android:layout_alignParentLeft="true" android:layout_width="fill_parent" android:layout_height="wrap_content" 
+		android:weightSum="3">
+		<Button android:id="@+id/btnBack" style="@style/button" android:text="MAIN MENU" android:textSize="12sp"
+			android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content" />
+		<View android:layout_weight="1" android:layout_width="0dip" android:layout_height="0dip" />
+		<Button android:id="@+id/btnGo" style="@style/button" android:text="GO!" 
+			android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content" />
+	</LinearLayout>
+</RelativeLayout>

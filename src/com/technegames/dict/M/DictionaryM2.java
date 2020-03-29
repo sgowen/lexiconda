@@ -1,0 +1,32 @@
+package com.technegames.dict.M;
+
+import com.technegames.framework.Dictionary;
+
+public class DictionaryM2 implements Dictionary{
+	private static String[] lettersM2 = { "me", "mead", "meadow", "meadowland", "meadows", "meagre", "meagrely", "meagreness", "meal", "mealie", "mealies", "meals", "mealtime", "mealtimes", "mealy", "mean", "meander", "meandered", "meandering", "meanderings", "meanders", "meaner", "meanest", "meanie", "meanies", "meaning", "meaningful", "meaningfully", "meaningfulness", "meaningless", "meaninglessly", "meaninglessness", "meanings", "meanly", "meanness", "means", "meant", "meantime", "meanwhile", "meany", "measles", "measly", "measurable", "measurably", "measure", "measured", "measureless", "measurement", "measurements", "measures", "measuring", "meat", "meataxe", "meatball", "meatballs", "meatier", "meatiest", "meatless", "meatpie", "meats", "meaty", "mecca", "mechanic", "mechanical", "mechanically", "mechanicals", "mechanics", "mechanisable", "mechanisation", "mechanise", "mechanised", "mechanising", "mechanism", "mechanisms", "mechanist", "mechanistic", "mechanistically", "medal", "medallion", "medallions", "medallist", "medallists", "medals", "meddle", "meddled", "meddler", "meddlers", "meddles", "meddlesome", "meddling", "media", "mediaeval", "medial", "medially", "median", "medians", "mediate", "mediated", "mediates", "mediating", "mediation", "mediator", "mediators", "mediatory", "medic", "medical", "medically", "medicals", "medicate", "medicated", "medication", "medications", "medicinal", "medicine", "medicines", "medics", "medieval", "medievalist", "medievalists", "mediocre", "mediocrity", "meditate", "meditated", "meditates", "meditating", "meditation", "meditations", "meditative", "meditatively", "meditator", "medium", "mediums", "mediumsized", "medlar", "medley", "medleys", "medulla", "medusa", "meek", "meeker", "meekest", "meekly", "meekness", "meet", "meeter", "meeting", "meetings", "meets", "mega", "megabyte", "megabytes", "megahertz", "megajoules", "megalith", "megalithic", "megalomania", "megalomaniac", "megalomaniacs", "megaparsec", "megaphone", "megastar", "megaton", "megatons", "megavolt", "megawatt", "megawatts", "meiosis", "meiotic", "melancholia", "melancholic", "melancholies", "melancholy", "melange", "melanin", "melanoma", "melanomas", "melatonin", "meld", "melee", "mellifluous", "mellifluously", "mellifluousness", "mellow", "mellowed", "mellower", "mellowing", "mellows", "melodic", "melodically", "melodies", "melodious", "melodiously", "melodrama", "melodramas", "melodramatic", "melodramatically", "melody", "melon", "melons", "melt", "meltdown", "melted", "melter", "melting", "melts", "member", "members", "membership", "memberships", "membrane", "membranes", "memento", "memo", "memoir", "memoirs", "memorabilia", "memorable", "memorably", "memoranda", "memorandum", "memorandums", "memorial", "memorials", "memories", "memorisation", "memorise", "memorised", "memorises", "memorising", "memory", "memphis", "men", "menace", "menaced", "menaces", "menacing", "menacingly", "menagerie", "menarche", "mend", "mendacious", "mendacity", "mended", "mendel", "mendelevium", "mender", "menders", "mendicant", "mending", "mends", "menfolk", "menhir", "menhirs", "menial", "meningitis", "meniscus", "menopausal", "menopause", "menorah", "menstrual", "menstruating", "menstruation", "menswear", "mental", "mentalistic", "mentalities", "mentality", "mentally", "menthol", "mention", "mentionable", "mentioned", "mentioning", "mentions", "mentor", "mentors", "menu", "menus", "meow", "meows", "mercantile", "mercenaries", "mercenary", "merchandise", "merchandising", "merchant", "merchantability", "merchantable", "merchantman", "merchantmen", "merchants", "mercies", "merciful", "mercifully", "merciless", "mercilessly", "mercurial", "mercuric", "mercury", "mercy", "mere", "merely", "merest", "meretricious", "merge", "merged", "merger", "mergers", "merges", "merging", "meridian", "meridians", "meridional", "meringue", "meringues", "merino", "merit", "merited", "meriting", "meritocracy", "meritocratic", "meritocrats", "meritorious", "merits", "mermaid", "mermaids", "merman", "mermen", "meromorphic", "merrier", "merriest", "merrily", "merriment", "merry", "merrygoround", "merrygorounds", "merrymaking", "mescaline", "mesh", "meshed", "meshes", "meshing", "mesmeric", "mesmerised", "mesmerising", "mesolithic", "meson", "mesons", "mesosphere", "mesozoic", "mess", "message", "messages", "messaging", "messed", "messenger", "messengers", "messes", "messiah", "messier", "messiest", "messily", "messiness", "messing", "messy", "mestizo", "met", "metabolic", "metabolically", "metabolise", "metabolised", "metabolises", "metabolism", "metabolisms", "metal", "metalanguage", "metalinguistic", "metalled", "metallic", "metallised", "metallurgical", "metallurgist", "metallurgy", "metals", "metalwork", "metalworking", "metamorphic", "metamorphism", "metamorphose", "metamorphosed", "metamorphoses", "metamorphosis", "metaphor", "metaphoric", "metaphorical", "metaphorically", "metaphors", "metaphysical", "metaphysically", "metaphysics", "metastability", "metastable", "metastases", "metastasis", "metastatic", "metatarsal", "meted", "metempsychosis", "meteor", "meteoric", "meteorite", "meteorites", "meteoritic", "meteorological", "meteorologist", "meteorologists", "meteorology", "meteors", "meter", "metered", "metering", "meters", "methadone", "methane", "methanol", "methionine", "method", "methodical", "methodically", "methodological", "methodologically", "methodologies", "methodology", "methods", "methyl", "methylated", "methylene", "meticulous", "meticulously", "metier", "metonymic", "metonymy", "metre", "metres", "metric", "metrical", "metrically", "metrication", "metrics", "metro", "metronome", "metronomes", "metronomic", "metropolis", "metropolises", "metropolitan", "mettle", "mew", "mewing", "mews", "mexican", "mexicans", "mexico", "mezzanine", "mezzosoprano" };
+	private int searchIndex;
+	
+	public DictionaryM2(){
+		searchIndex = 0;
+	}
+	
+	public int getWordValue(String value){
+		for(int i = searchIndex; i < lettersM2.length; i++){
+			if(lettersM2[i].equalsIgnoreCase(value)){
+				return lettersM2[i].length();
+			}
+		}
+		return 0;
+	}
+	
+	public boolean isPotentialWord(String value){
+		for(int i = 0; i < lettersM2.length; i++){
+			if(lettersM2[i].matches(value+".*")){
+				searchIndex = i;
+				return true;
+			}
+		}
+		return false;
+	}
+	
+}

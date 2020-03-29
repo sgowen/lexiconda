@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/main" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout android:id="@+id/icon" android:orientation="vertical" android:layout_alignParentTop="true" 
+		android:layout_alignParentLeft="true" android:layout_width="fill_parent" android:layout_height="fill_parent" >
+		<ImageView android:id="@+id/bg" android:src="@drawable/bg" android:layout_width="fill_parent" 
+			android:layout_height="fill_parent" >
+		</ImageView>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/logo" android:orientation="vertical" android:layout_alignParentTop="true" 
+		android:layout_alignParentLeft="true" android:layout_width="fill_parent" android:layout_height="wrap_content" >
+		<ImageView android:id="@+id/title" android:src="@drawable/title" android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" >
+		</ImageView>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/buttons" android:orientation="vertical" android:layout_alignParentTop="true"
+		android:layout_alignParentRight="true" android:layout_width="fill_parent" android:layout_height="fill_parent" 
+		android:weightSum="16" android:gravity="right" >
+		<View android:layout_weight="3" android:layout_width="0dip" android:layout_height="0dip" />
+		<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0dip" 
+			android:weightSum="16" android:layout_weight="1" >
+			<View android:layout_weight="7" android:layout_width="0dip" android:layout_height="0dip" />
+			<Button android:id="@+id/btnPlay" style="@style/button" android:text="Play Game" 
+				android:layout_width="0dip" android:layout_height="fill_parent" android:layout_weight="8" />
+			<View android:layout_weight="1" android:layout_width="0dip" android:layout_height="0dip" />
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0dip" 
+			android:weightSum="16" android:layout_weight="1" >
+			<View android:layout_weight="7" android:layout_width="0dip" android:layout_height="0dip" />
+			<Button android:id="@+id/btnHighScores" style="@style/button" android:text="Highscores"
+				android:layout_width="0dip" android:layout_height="fill_parent" android:layout_weight="8" />
+			<View android:layout_weight="1" android:layout_width="0dip" android:layout_height="0dip" />
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0dip" 
+			android:weightSum="16" android:layout_weight="1" >
+			<View android:layout_weight="7" android:layout_width="0dip" android:layout_height="0dip" />
+			<Button android:id="@+id/btnLexicon" style="@style/button" android:text="Lexicon"
+				android:layout_width="0dip" android:layout_height="fill_parent" android:layout_weight="8" />
+			<View android:layout_weight="1" android:layout_width="0dip" android:layout_height="0dip" />
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0dip" 
+			android:weightSum="16" android:layout_weight="1" >
+			<View android:layout_weight="7" android:layout_width="0dip" android:layout_height="0dip" />
+			<Button android:id="@+id/btnHowToPlay" style="@style/button" android:text="How To Play"
+				android:layout_width="0dip" android:layout_height="fill_parent" android:layout_weight="8" />
+			<View android:layout_weight="1" android:layout_width="0dip" android:layout_height="0dip" />
+		</LinearLayout>
+		<View android:layout_weight="7" android:layout_width="0dip" android:layout_height="0dip" />
+	</LinearLayout>
+</RelativeLayout>

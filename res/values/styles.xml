@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="button"> 
+        <item name="android:textColor">#0000FF</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:background">@drawable/selectbutton</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:onClick">click</item>
+    </style>
+</resources>
